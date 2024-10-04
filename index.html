@@ -1,453 +1,487 @@
 <!DOCTYPE html>
 <html>
-<title>Web Development Portfolio</title>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <title>Development Portfolio</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<meta
-      name="web developer portfolio"
-      content="Web site created to show my work on web developer and software development"
-/>
+    <meta
+          name="web developer portfolio"
+          content="Web site created to show my work on web developer and software development"
+    />
 
-<link rel="icon" href="714.jpg" />
-<link rel="stylesheet" href="cards.css">
-<link rel="stylesheet" href="W3style.css">
-<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-colors-win8.css">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-<!-- <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-colors-2021.css"> -->
-<!-- <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato"> -->
+    <link rel="icon" href="714.jpg" />
+    <link rel="stylesheet" href="cards.css">
+    <link rel="stylesheet" href="W3style.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-colors-win8.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <!-- <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-colors-2021.css"> -->
+    <!-- <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato"> -->
 
-<style>
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
-body,h1,h2,h3,h4,h5,h6 {font-family: "Montserrat";font-weight:400}
-body, html {
-  height: 100%;
-  color: #777;
-  line-height: 1.8;
-  background-color: #0a0a0f;
-}
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+      body,h1,h2,h3,h4,h5,h6 {font-family: "Montserrat";font-weight:400}
+      body, html {
+        height: 100%;
+        color: #777;
+        line-height: 1.8;
+        background-color: #0a0a0f;
+      }
 
-/* Create a Parallax Effect */
-.bgimg-1, .bgimg-2, .bgimg-3 {
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
+      /* Create a Parallax Effect */
+      .bgimg-1, .bgimg-2, .bgimg-3 {
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
 
-/* First image (Logo. Full height) */
-.bgimg-1 {
-  background-image: url('https://img.itch.zone/aW1hZ2UvMTExNjMyMS8xMzM5MDkyNi5wbmc=/original/gOBy0B.png');
-  min-height: 100%;
-}
+      /* First image (Logo. Full height) */
+      .bgimg-1 {
+        background-image: url('https://img.itch.zone/aW1hZ2UvMTExNjMyMS8xMzM5MDkyNi5wbmc=/original/gOBy0B.png');
+        min-height: 100%;
+      }
 
-/* Second image (Portfolio) */
-.bgimg-2 {
-  background-image: url("https://img.itch.zone/aW1hZ2UvMTExNjMyMS82NDUyMzI5LnBuZw==/original/%2Fk91Tj.png");
-  min-height: 400px;
-}
+      /* Second image (Portfolio) */
+      .bgimg-2 {
+        background-image: url("https://img.itch.zone/aW1hZ2UvMTExNjMyMS82NDUyMzI5LnBuZw==/original/%2Fk91Tj.png");
+        min-height: 400px;
+      }
 
-/* Third image (Contact) */
-.bgimg-3 {
-  background-image: url("./digitalart.png");
-  min-height: 400px;
-}
+      /* Third image (Contact) */
+      .bgimg-3 {
+        background-image: url("./digitalart.png");
+        min-height: 400px;
+      }
 
-/* #canvas{
-    position: 0;
-    background: black;
-    width: 100%;
-    top: 0;
-    left: 0;
-} */
+      /* #canvas{
+          position: 0;
+          background: black;
+          width: 100%;
+          top: 0;
+          left: 0;
+      } */
 
-.w3-wide {letter-spacing: 10px;}
-.w3-hover-opacity {cursor: pointer;}
-/*
-@media only screen and (max-device-width: 1600px) {
-  canvas{
-    background-attachment: scroll;
-    min-height: 400px;
-  }*/
-/* Turn off parallax scrolling for tablets and phones */
-@media only screen and (max-device-width: 1600px) {
-  .bgimg-1, .bgimg-2, .bgimg-3 {
-    background-attachment: scroll;
-    min-height: 400px;
-  }
-}
-</style>
+      .w3-wide {letter-spacing: 10px;}
+      .w3-hover-opacity {cursor: pointer;}
+      /*
+      @media only screen and (max-device-width: 1600px) {
+        canvas{
+          background-attachment: scroll;
+          min-height: 400px;
+        }*/
+      /* Turn off parallax scrolling for tablets and phones */
+      @media only screen and (max-device-width: 1600px) {
+        .bgimg-1, .bgimg-2, .bgimg-3 {
+          background-attachment: scroll;
+          min-height: 400px;
+        }
+      }
+    </style>
+  </head>
+  <body >
+    <!-- Navbar (sit on top) -->
+    <div class="w3-top">
+      <div class="w3-bar w3-black" id="myNavbar">
+        <a 
+          class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right" 
+          href="javascript:void(0);" 
+          onclick="toggleFunction()"
+          title="Toggle Navigation Menu">
+          <i class="fa fa-bars"></i>
+        </a>
+        <a 
+          href="#home"
+          class="w3-bar-item w3-button">
+            HOME
+        </a>
+        <a
+          href="https://slnople.wordpress.com/sinople/"
+          class="w3-bar-item w3-button w3-hide-small">
+            <i class="fa fa-laptop"></i>
+            Web development
+        </a>
+        <a
+          href="#about"
+          class="w3-bar-item w3-button w3-hide-small">
+            <i class="fa fa-user"></i>
+            About
+        </a>
+        <a
+          href="#portfolio"
+          class="w3-bar-item w3-button w3-hide-small">
+            <i class="fa fa-th"></i>
+            Portfolio
+        </a>
+        <a
+          href="#contact"
+          class="w3-bar-item w3-button w3-hide-small">
+            <i class="fa fa-envelope"></i>
+            Contact
+        </a>
+        <!--<a href="" class="w3-bar-item w3-button w3-hide-small w3-right w3-hover-red">-->
+          <!--<i class="fa fa-search"></i>-->
+        </a>
+      </div>
 
-<body >
-<!-- Navbar (sit on top) -->
-<div class="w3-top">
-  <div class="w3-bar w3-black" id="myNavbar">
-    <a 
-      class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right" 
-      href="javascript:void(0);" 
-      onclick="toggleFunction()"
-      title="Toggle Navigation Menu">
-      <i class="fa fa-bars"></i>
-    </a>
-    <a 
-      href="#home"
-      class="w3-bar-item w3-button">
-        HOME
-    </a>
-    <a
-      href="https://slnople.wordpress.com/sinople/"
-      class="w3-bar-item w3-button w3-hide-small">
-        <i class="fa fa-laptop"></i>
-        Web development
-    </a>
-    <a
-      href="#about"
-      class="w3-bar-item w3-button w3-hide-small">
-        <i class="fa fa-user"></i>
-        About
-    </a>
-    <a
-      href="#portfolio"
-      class="w3-bar-item w3-button w3-hide-small">
-        <i class="fa fa-th"></i>
-        Portfolio
-    </a>
-    <a
-      href="#contact"
-      class="w3-bar-item w3-button w3-hide-small">
-        <i class="fa fa-envelope"></i>
-        Contact
-    </a>
-    <!--<a href="" class="w3-bar-item w3-button w3-hide-small w3-right w3-hover-red">-->
-      <!--<i class="fa fa-search"></i>-->
-    </a>
-  </div>
-
-  <!-- Navbar on small screens -->
-  <div
-    id="navDemo"
-    class="w3-bar-block w3-black w3-hide w3-hide-large w3-hide-medium">
-      <a
-        href="https://slnople.wordpress.com/sinople/"
-        class="w3-bar-item w3-button"
-        onclick="toggleFunction()">
+      <!-- Navbar on small screens -->
+      <div id="navDemo" class="w3-bar-block w3-black w3-hide w3-hide-large w3-hide-medium">
+        <a
+          href="https://slnople.wordpress.com/sinople/"
+          class="w3-bar-item w3-button"
+          onclick="toggleFunction()">
           Web development
-      </a>
-      <a
-        href="#about"
-        class="w3-bar-item w3-button"
-        onclick="toggleFunction()">
+        </a>
+        <a
+          href="#about"
+          class="w3-bar-item w3-button"
+          onclick="toggleFunction()">
           About
-      </a>
-      <a
-        href="#portfolio"
-        class="w3-bar-item w3-button"
-        onclick="toggleFunction()">
+        </a>
+        <a
+          href="#portfolio"
+          class="w3-bar-item w3-button"
+          onclick="toggleFunction()">
           Portfolio
-      </a>
-      <a
-        href="#contact"
-        class="w3-bar-item w3-button"
-        onclick="toggleFunction()">
+        </a>
+        <a
+          href="#contact"
+          class="w3-bar-item w3-button"
+          onclick="toggleFunction()">
           Contact
-      </a>
-  </div>
-</div>
+        </a>
+      </div>
+    </div>
 
-<!-- First Parallax Image with Logo Text -->
-<!-- <div class="bgimg-1 w3-display-container" id="home">
-  <div
-    class="w3-display-middle"
-    style="white-space:nowrap;">
-    <span
-      class="w3-center w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity">
-        SINOPLE
-    </span>
-  </div>
-</div> -->
+    <!-- First Parallax Image with Logo Text -->
+    <!-- <div class="bgimg-1 w3-display-container" id="home">
+      <div
+        class="w3-display-middle"
+        style="white-space:nowrap;">
+        <span
+          class="w3-center w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity">
+            SINOPLE
+        </span>
+      </div>
+    </div> -->
 
-<!-- ////////////////////////////////////////////////////////////       -->
+    <!-- ////////////////////////////////////////////////////////////       -->
 
-  <div class="wrapper w3-hide-small" style="background-color:#eeeeea" id="home">
-        <div class="container">
-            <input type="radio" name="slide" id="c1" checked>
-            <label for="c1" class="card">
-                <div class="row">
-                    <div class="icon"><i class="fa fa-laptop"></i></div>
-                    <div class="description">
-                        <p><a href="https://slnople.wordpress.com/sinople/" class="w3-button w3-black w3-round-xxlarge">Web development</a></p>
-                        
-                    </div>
-                </div>
-            </label>
-            <input type="radio" name="slide" id="c2">
-            <label for="c2" class="card">
-                <div class="row">
-                    <div class="icon"><i class="material-icons">camera_alt</i></div>
-                    <div class="description">
-                        <p><a href="https://500px.com/p/Sinople" class="w3-button w3-black w3-round-xxlarge">Photography</a></p>
-                    </div>
-                </div>
-            </label>
-            <input type="radio" name="slide" id="c3">
-            <label for="c3" class="card">
-                <div class="row">
-                    <div class="icon"><i class="fa fa-gamepad"></i></div>
-                    <div class="description">
-                        <p><a href="https://sinople.itch.io/" class="w3-button w3-black w3-round-xxlarge">Game development</a></p>
-                    </div>
-                </div>
-            </label>
-            <input type="radio" name="slide" id="c4">
-            <label for="c4" class="card">
-                <div class="row">
-                    <div class="icon"><i class="fa fa-edit"></i></div>
-                    <div class="description">
-                        <p><a href="https://www.instagram.com/shur_d_firsiel/" class="w3-button w3-black w3-round-xxlarge">Artwork</a></p>
-                    </div>
-                </div>
-            </label>
+    <div class="wrapper w3-hide-small" style="background-color:#eeeeea" id="home">
+      <div class="container">
+
+        <input type="radio" name="slide" id="c1" checked>
+        <label for="c1" class="card">
+          <div class="row">
+            <div class="icon">
+              <i class="fa fa-laptop"></i>
+            </div>
+            <div class="description">
+              <p>
+                <a 
+                  href="https://slnople.wordpress.com/sinople/"
+                  class="w3-button w3-black w3-round-xxlarge">
+                  Web development
+                </a>
+              </p>                
+            </div>
+          </div>
+        </label>
+
+        <input type="radio" name="slide" id="c2">
+        <label for="c2" class="card">
+          <div class="row">
+            <div class="icon">
+              <i class="material-icons">camera_alt</i>
+            </div>
+            <div class="description">
+              <p>
+                <a
+                  href="https://500px.com/p/Sinople"
+                  class="w3-button w3-black w3-round-xxlarge">
+                  Photography
+                </a>
+              </p>
+            </div>
+          </div>
+        </label>
+
+        <input type="radio" name="slide" id="c3">
+        <label for="c3" class="card">
+          <div class="row">
+            <div class="icon">
+              <i class="fa fa-gamepad"></i>
+            </div>
+            <div class="description">
+              <p>
+                <a
+                  href="https://sinople.itch.io/"
+                  class="w3-button w3-black w3-round-xxlarge">
+                  Game development
+                </a>
+              </p>
+            </div>
+          </div>
+        </label>
+
+        <input type="radio" name="slide" id="c4">
+        <label for="c4" class="card">
+          <div class="row">
+            <div class="icon">
+              <i class="fa fa-edit"></i>
+            </div>
+            <div class="description">
+              <p>
+                <a
+                  href="https://www.instagram.com/shur_d_firsiel/"
+                  class="w3-button w3-black w3-round-xxlarge">
+                  Artwork
+                </a>
+              </p>
+            </div>
+          </div>
+        </label>
+      </div>
+    </div>
+    <!--  /////////////////////////////////////////////////////// -->
+
+
+    <!-- Container (About Section) -->
+    <div class="w3-content w3-container w3-padding-64 w3-text-white" id="about">
+      <h3 class="w3-center">
+          ABOUT ME
+      </h3>
+      <p
+        class="w3-center">
+          <em>I love Coding and Art</em>
+      </p>
+    
+      <div class="w3-row">
+        <div class="w3-col m6 w3-center w3-padding-large">
+          <p>
+            <b>
+              <i class="fa fa-user w3-margin-right"></i>
+              Martin Carballo
+            </b>
+          </p>
+          <br>
+          <img
+            src="./img.jpg"
+            class="w3-round w3-image w3-hover-opacity-off"
+            alt="Photo of Me"
+            width="500"
+            height="333">
         </div>
-  </div>
-<!--  /////////////////////////////////////////////////////// -->
+        <!-- w3-opacity -->
 
-
-  <!-- Container (About Section) -->
-  <div class="w3-content w3-container w3-padding-64 w3-text-white" id="about">
-    <h3 class="w3-center">
-        ABOUT ME
-    </h3>
-    <p
-      class="w3-center">
-        <em>I love Coding and Art</em>
-    </p>
-  
-    <div class="w3-row">
-      <div class="w3-col m6 w3-center w3-padding-large">
-        <p>
-          <b>
-            <i class="fa fa-user w3-margin-right"></i>
-            Martin Carballo
-          </b>
-        </p>
-        <br>
-        <img
-          src="./img.jpg"
-          class="w3-round w3-image w3-hover-opacity-off"
-          alt="Photo of Me"
-          width="500"
-          height="333">
+        <!-- Hide this text on small devices -->
+        <div class="w3-col m6 w3-hide-small w3-padding-large">
+          <br>
+          <p>
+            I'm an software developer with experience in python, Django,
+            Django REST, data bases, React, javascript, HTML5 and CSS. I 
+            Have experience building desktop applications, web applications
+            and responsive landing pages.
+          </p>
+          <br>
+          <p>
+            I started in the web world by making my own Photography Portfolio,
+            where I shared my pictures of nature and landscapes. After I finished
+            my master courses on Electronic and Computer Science I decided to
+            follow the path of a web developer, since I love art and coding.
+          </p>
+          
+          <br>
+          <p>
+            I enjoy creating new designs and developing
+            projects and ideas for any kind of business
+            and organizations.
+          </p>
+        </div>
       </div>
-      <!-- w3-opacity -->
+      <!-- social links -->
+      <h3 class="w3-center">
+        <a href="https://www.instagram.com/shur_d_firsiel/" target="_blank"><i class="fa fa-instagram w3-hover-opacity"></i></a>
+        <a href="https://www.linkedin.com/in/mart%C3%ADn-carballo-flores-6448189a/" target="_blank"><i class="fa fa-linkedin w3-hover-opacity"></i></a>
+      </h3>
+    </div>
+    
+    <div class="w3-center w3-padding-64" style="background-color:#eeeeea">
+      <!-- Percentages -->
+      <p class="w3-large w3-center ">Im really good at:</p>
 
-      <!-- Hide this text on small devices -->
-      <div class="w3-col m6 w3-hide-small w3-padding-large">
-        <br>
-        <p>
-          I'm an software developer with experience in python, Django,
-          Django REST, data bases, React, javascript, HTML5 and CSS. I 
-          Have experience building desktop applications, web applications
-          and responsive landing pages.
-        </p>
-        <br>
-        <p>
-          I started in the web world by making my own Photography Portfolio,
-          where I shared my pictures of nature and landscapes. After I finished
-          my master courses on Electronic and Computer Science I decided to
-          follow the path of a web developer, since I love art and coding.
-        </p>
+        <p class="w3-wide"><i class="fa-brands fa-python"></i>Python</p>
+        <div class="w3-black">
+          <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:90%">90%</div>
+        </div>
         
-        <br>
-        <p>
-          I enjoy creating new designs and developing
-          projects and ideas for any kind of business
-          and organizations.
-        </p>
+        <p class="w3-wide"><i class="fa fa-css3"></i>CSS</p>
+        <div class="w3-black">
+          <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:95%">95%</div>
+        </div>
+
+        <p class="w3-wide"><i class="fa-brands fa-js"></i>JavaScript</p>
+        <div class="w3-black">
+          <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:80%">80%</div>
+        </div>
+
+        <p class="w3-wide"><i class="fa-solid fa-atom"></i></i>React</p>
+        <div class="w3-black">
+          <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:60%">60%</div>
+        </div>
+    </div>
+
+    <!-- Parallax for number of projects and clients -->
+    <div class="w3-row w3-center w3-dark-grey w3-padding-16">
+      <div class="w3-half w3-section">
+        <span class="w3-xlarge">8</span><br>
+        Projects Done
+      </div>
+      <div class="w3-half w3-section">
+        <span class="w3-xlarge">20</span><br>
+        Happy Clients
       </div>
     </div>
-    <!-- social links -->
-    <h3 class="w3-center">
-      <a href="https://www.instagram.com/shur_d_firsiel/" target="_blank"><i class="fa fa-instagram w3-hover-opacity"></i></a>
-      <a href="https://www.linkedin.com/in/mart%C3%ADn-carballo-flores-6448189a/" target="_blank"><i class="fa fa-linkedin w3-hover-opacity"></i></a>
-    </h3>
-  </div>
-  
-  <div class="w3-center w3-padding-64" style="background-color:#eeeeea">
-    <!-- Percentages -->
-    <p class="w3-large w3-center ">Im really good at:</p>
 
-      <p class="w3-wide"><i class="fa-brands fa-python"></i>Python</p>
-      <div class="w3-black">
-        <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:90%">90%</div>
-      </div>
-      
-      <p class="w3-wide"><i class="fa fa-css3"></i>CSS</p>
-      <div class="w3-black">
-        <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:95%">95%</div>
-      </div>
-
-      <p class="w3-wide"><i class="fa-brands fa-js"></i>JavaScript</p>
-      <div class="w3-black">
-        <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:80%">80%</div>
-      </div>
-
-      <p class="w3-wide"><i class="fa-solid fa-atom"></i></i>React</p>
-      <div class="w3-black">
-        <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:60%">60%</div>
-      </div>
-  </div>
-
-  <!-- Parallax for number of projects and clients -->
-  <div class="w3-row w3-center w3-dark-grey w3-padding-16">
-    <div class="w3-half w3-section">
-      <span class="w3-xlarge">8</span><br>
-      Projects Done
-    </div>
-    <div class="w3-half w3-section">
-      <span class="w3-xlarge">20</span><br>
-      Happy Clients
-    </div>
-  </div>
-
-  <!-- Second Parallax Image with Portfolio Text -->
-  <div class="bgimg-2 w3-display-container">
-    <div class="w3-display-middle">
-      <span class="w3-xxlarge w3-text-white w3-wide">PORTFOLIO</span>
-    </div>
-  </div>
-
-<!-- Container (Portfolio Section) -->
-<div class="w3-content w3-container w3-padding-64 w3-text-white" id="portfolio">
-  <h3 class="w3-center w3-text-white">MY WORK</h3>
-  <p class="w3-center w3-text-white"><em>Here are some of my latest projects.<br> Click on the images to visit the Web Page</em></p><br>
-
-  <!-- Responsive Grid. Four columns on tablets, laptops and desktops. Will stack on mobile devices/small screens (100% width) -->
-  <div class="w3-row-padding w3-center">
-    <div class="w3-col m3">
-      <a href="https://sinople.itch.io"><img src="./gameshop.png" style="width:100%" class="w3-hover-opacity" alt="Games eShop"></a>
-    </div>
-
-    <div class="w3-col m3">
-      <a href='https://slnople.wordpress.com/sinople/' target='_self'><img src="./hero.png"  style="width:100%" class="w3-hover-opacity" alt="Web design Agency"/></a>
-    </div>
-
-    <div class="w3-col m3">
-      <a href="https://sinople-lab.github.io/home/"><img src="root.png" style="width:100%" class="w3-hover-opacity" alt="CSS animation for my Home page"></a>
-    </div>
-
-    <div class="w3-col m3">
-      <a href="https://sinople-lab.github.io/firstPage/"><img src="ashur.png" style="width:100%" class="w3-hover-opacity" alt="Web page to teach the basics of html"></a>
-    </div>
-  </div>
-
-  <div class="w3-row-padding w3-center w3-section">
-    <div class="w3-col m3">
-      <a href="" ><img src="ArtCorner.png" style="width:100%" class="w3-hover-opacity" alt="Landing pare to showcase my work"></a>
-    </div>
-
-    <div class="w3-col m3">
-      <a href="https://sinople-lab.github.io/homework/"><img src="form.png" style="width:100%" class="w3-hover-opacity" alt="Sign up form for clients projects"></a>
-    </div>
-
-    <div class="w3-col m3">
-      <a href="https://sinople.itch.io/sinoplerunner"><img src="https://img.itch.zone/aW1hZ2UvMTExNjMyMS8xMzM5MDIzOC5wbmc=/original/cUJKua.png" style="width:100%" class="w3-hover-opacity" alt="2D Racing Game Design"></a>
-    </div>
-
-    <div class="w3-col m3">
-      <a href="https://500px.com/p/Sinople?view=photos"><img src="photo.JPG" style="width:100%" class="w3-hover-opacity" alt="Photography Portfolio"></a>
-    </div>
-  </div>
-
-  <div class="w3-center w3-padding-large">
-    <br/>
-    <p> Send me a message and lets start working together</p>
-    <br/>
-    <a href="https://sinople-lab.github.io/homework/" target="_blank" class="w3-button w3-light-grey" >message me</a>
-  </div>
-</div>
-
-<!-- Modal for full size images on click-->
-<div id="modal01" class="w3-modal w3-black" onclick="this.style.display='none'">
-  <span class="w3-button w3-large w3-black w3-display-topright" title="Close Modal Image"><i class="fa fa-remove"></i></span>
-  <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
-    <img id="img01" class="w3-image">
-    <p id="caption" class="w3-opacity w3-large"></p>
-  </div>
-</div>
-
-<!-- Third Parallax Image with Portfolio Text -->
-<div class="bgimg-3 w3-display-container">
-  <div class="w3-display-middle">
-     <span class="w3-xxlarge w3-text-white w3-wide">CONTACT</span>
-  </div>
-</div>
-
-<!-- Container (Contact Section) -->
-<div class="w3-content w3-container w3-padding-64 w3-text-white" id="contact">
-  <h3 class="w3-center">WHERE I WORK</h3>
-  <p class="w3-center"><em>Ask for more details about design projects !!</em></p>
-  <div class="w3-center">
-    <br/>
-    <a href="https://sinople-lab.github.io/homework/" target="_blank" class="w3-button w3-light-grey" >message</a>
-  </div>
-  <div class="w3-row w3-padding-32 w3-section">
-    <div class="w3-col m4 w3-container">
-      <img src="map.jpg" class="w3-image w3-round" style="width:100%">
-    </div>
-    <div class="w3-col m8 w3-panel">
-      <div class="w3-large w3-margin-bottom">
-        <p>Or send me an email at:</p>
-        <i class="fa fa-envelope fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Email: sinoplecarballo@gmail.com<br>
-        <i class="fa fa-map-marker fa-fw w3-hover-text-black w3-xlarge w3-margin-right" style="color:tomato"></i> Queretaro, Qro. MEX<br>
-        <i class="fa fa-phone fa-fw w3-hover-text-black w3-xlarge w3-margin-right" style="color:red"></i> Phone: +52 2282128716<br>
+    <!-- Second Parallax Image with Portfolio Text -->
+    <div class="bgimg-2 w3-display-container">
+      <div class="w3-display-middle">
+        <span class="w3-xxlarge w3-text-white w3-wide">PORTFOLIO</span>
       </div>
     </div>
-  </div>
-</div>
 
-<!-- Footer -->
-<footer class="w3-center w3-black w3-padding-64">
-  <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
-  <div class="w3-xlarge w3-section">
-    <a href="https://www.instagram.com/shur_d_firsiel/" target="_blank"><i class="fa fa-instagram w3-hover-opacity"></i></a>
-    <a href="https://www.linkedin.com/in/martin-sinople/" target="_blank"><i class="fa fa-linkedin w3-hover-opacity"></i></a>
-  </div>
-  <p>Powered by &copy; 2024 <a href="" title="Sinople-lab" target="_blank" className="w3-hover-text-green">Ashur-lab</a></p>
-</footer>
+    <!-- Container (Portfolio Section) -->
+    <div class="w3-content w3-container w3-padding-64 w3-text-white" id="portfolio">
+      <h3 class="w3-center w3-text-white">MY WORK</h3>
+      <p class="w3-center w3-text-white"><em>Here are some of my latest projects.<br> Click on the images to visit the Web Page</em></p><br>
+
+      <!-- Responsive Grid. Four columns on tablets, laptops and desktops. Will stack on mobile devices/small screens (100% width) -->
+      <div class="w3-row-padding w3-center">
+        <div class="w3-col m3">
+          <a href="https://sinople.itch.io"><img src="./gameshop.png" style="width:100%" class="w3-hover-opacity" alt="Games eShop"></a>
+        </div>
+
+        <div class="w3-col m3">
+          <a href='https://slnople.wordpress.com/sinople/' target='_self'><img src="./hero.png"  style="width:100%" class="w3-hover-opacity" alt="Web design Agency"/></a>
+        </div>
+
+        <div class="w3-col m3">
+          <a href="https://sinople-lab.github.io/home/"><img src="root.png" style="width:100%" class="w3-hover-opacity" alt="CSS animation for my Home page"></a>
+        </div>
+
+        <div class="w3-col m3">
+          <a href="https://sinople-lab.github.io/firstPage/"><img src="ashur.png" style="width:100%" class="w3-hover-opacity" alt="Web page to teach the basics of html"></a>
+        </div>
+      </div>
+
+      <div class="w3-row-padding w3-center w3-section">
+        <div class="w3-col m3">
+          <a href="" ><img src="ArtCorner.png" style="width:100%" class="w3-hover-opacity" alt="Landing pare to showcase my work"></a>
+        </div>
+
+        <div class="w3-col m3">
+          <a href="https://sinople-lab.github.io/homework/"><img src="form.png" style="width:100%" class="w3-hover-opacity" alt="Sign up form for clients projects"></a>
+        </div>
+
+        <div class="w3-col m3">
+          <a href="https://sinople.itch.io/sinoplerunner"><img src="https://img.itch.zone/aW1hZ2UvMTExNjMyMS8xMzM5MDIzOC5wbmc=/original/cUJKua.png" style="width:100%" class="w3-hover-opacity" alt="2D Racing Game Design"></a>
+        </div>
+
+        <div class="w3-col m3">
+          <a href="https://500px.com/p/Sinople?view=photos"><img src="photo.JPG" style="width:100%" class="w3-hover-opacity" alt="Photography Portfolio"></a>
+        </div>
+      </div>
+
+      <div class="w3-center w3-padding-large">
+        <br/>
+        <p> Send me a message and lets start working together</p>
+        <br/>
+        <a href="https://sinople-lab.github.io/homework/" target="_blank" class="w3-button w3-light-grey" >message me</a>
+      </div>
+    </div>
+
+    <!-- Modal for full size images on click-->
+    <div id="modal01" class="w3-modal w3-black" onclick="this.style.display='none'">
+      <span class="w3-button w3-large w3-black w3-display-topright" title="Close Modal Image"><i class="fa fa-remove"></i></span>
+      <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+        <img id="img01" class="w3-image">
+        <p id="caption" class="w3-opacity w3-large"></p>
+      </div>
+    </div>
+
+    <!-- Third Parallax Image with Portfolio Text -->
+    <div class="bgimg-3 w3-display-container">
+      <div class="w3-display-middle">
+        <span class="w3-xxlarge w3-text-white w3-wide">CONTACT</span>
+      </div>
+    </div>
+
+    <!-- Container (Contact Section) -->
+    <div class="w3-content w3-container w3-padding-64 w3-text-white" id="contact">
+      <h3 class="w3-center">WHERE I WORK</h3>
+      <p class="w3-center"><em>Ask for more details about design projects !!</em></p>
+      <div class="w3-center">
+        <br/>
+        <a href="https://sinople-lab.github.io/homework/" target="_blank" class="w3-button w3-light-grey" >message</a>
+      </div>
+      <div class="w3-row w3-padding-32 w3-section">
+        <div class="w3-col m4 w3-container">
+          <img src="map.jpg" class="w3-image w3-round" style="width:100%">
+        </div>
+        <div class="w3-col m8 w3-panel">
+          <div class="w3-large w3-margin-bottom">
+            <p>Or send me an email at:</p>
+            <i class="fa fa-envelope fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Email: sinoplecarballo@gmail.com<br>
+            <i class="fa fa-map-marker fa-fw w3-hover-text-black w3-xlarge w3-margin-right" style="color:tomato"></i> Queretaro, Qro. MEX<br>
+            <i class="fa fa-phone fa-fw w3-hover-text-black w3-xlarge w3-margin-right" style="color:red"></i> Phone: +52 2282128716<br>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="w3-center w3-black w3-padding-64">
+      <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+      <div class="w3-xlarge w3-section">
+        <a href="https://www.instagram.com/shur_d_firsiel/" target="_blank"><i class="fa fa-instagram w3-hover-opacity"></i></a>
+        <a href="https://www.linkedin.com/in/martin-sinople/" target="_blank"><i class="fa fa-linkedin w3-hover-opacity"></i></a>
+      </div>
+      <p>Powered by &copy; 2024 <a href="" title="Sinople-lab" target="_blank" className="w3-hover-text-green">Ashur-lab</a></p>
+    </footer>
 
 
-<script src="https://kit.fontawesome.com/c89fa255e5.js" crossorigin="anonymous"></script>
-<script>
+    <script src="https://kit.fontawesome.com/c89fa255e5.js" crossorigin="anonymous"></script>
 
-// Modal Image Gallery
-function onClick(element) {
-  document.getElementById("img01").src = element.src;
-  document.getElementById("modal01").style.display = "block";
-  var captionText = document.getElementById("caption");
-  captionText.innerHTML = element.alt;
-}
-
-// Change style of navbar on scroll
-window.onscroll = function() {myFunction()};
-function myFunction() {
-    var navbar = document.getElementById("myNavbar");
-    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
-        //navbar.className = "w3-bar" + " w3-card" + " w3-animate-top" + " w3-white";
-    } else {
-        //navbar.className = navbar.className.replace(" w3-card w3-animate-top w3-white", "");
+    <script>
+    // Modal Image Gallery
+    function onClick(element) {
+      document.getElementById("img01").src = element.src;
+      document.getElementById("modal01").style.display = "block";
+      var captionText = document.getElementById("caption");
+      captionText.innerHTML = element.alt;
     }
-} //*/
 
-// Used to toggle the menu on small screens when clicking on the menu button
-function toggleFunction() {
-    var x = document.getElementById("navDemo");
-    if (x.className.indexOf("w3-show") == -1) {
-        x.className += " w3-show";
-    } else {
-        x.className = x.className.replace(" w3-show", "");
+    // Change style of navbar on scroll
+    window.onscroll = function() {myFunction()};
+    function myFunction() {
+        var navbar = document.getElementById("myNavbar");
+        if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+            //navbar.className = "w3-bar" + " w3-card" + " w3-animate-top" + " w3-white";
+        } else {
+            //navbar.className = navbar.className.replace(" w3-card w3-animate-top w3-white", "");
+        }
+    } //*/
+
+    // Used to toggle the menu on small screens when clicking on the menu button
+    function toggleFunction() {
+        var x = document.getElementById("navDemo");
+        if (x.className.indexOf("w3-show") == -1) {
+            x.className += " w3-show";
+        } else {
+            x.className = x.className.replace(" w3-show", "");
+        }
     }
-}
-</script>
-</body>
+    </script>
+  </body>
 </html>
